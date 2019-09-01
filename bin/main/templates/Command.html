@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Command</title>
+</head>
+<body>
+    <form method="GET" th:action="@{/Result}" th:object="${commandForm}">
+				職業：<td th:text="${Character.getJob()}"></td><br>
+				名前：<td th:text="${Character.getName()}"></td><br>
+
+	<input type="submit" name = "nextAction" value="たたかう"><br>
+	<input type="submit" name = "nextAction" value="かいふく">
+    </form>
+</body>
+</html>

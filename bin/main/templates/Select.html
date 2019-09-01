@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>キャラ作成</title>
+</head>
+<body>
+<form method="GET" th:action="@{/Command}" th:object="${jobForm}">
+    キャラ作成
+        <p>職業<br>
+        <input type="radio" name="jobName" value="戦士">戦士
+        <input type="radio" name="jobName" value="魔法使い">魔法使い
+        <input type="radio" name="jobName" value="武闘家">武闘家
+        </p>
+    <p>名前<br>
+        <input type="text" name="charaName">
+    </p>
+    <input type="submit" value="次へ">
+</form>
+</body>
+</html>
