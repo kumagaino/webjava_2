@@ -3,7 +3,7 @@ package jp.co.systena.tigerscave.rpg.applications.models;
 public abstract class CommandBase {
   protected String commandLog;
 
-  public void switchCommand(CommandForm commandForm, CharacterList Character) {
+  public void switchCommand(CommandForm commandForm, Character Character) {
 
     switch (commandForm.getNextAction()) {
       case "たたかう":
@@ -14,7 +14,7 @@ public abstract class CommandBase {
     }
 
   }
-  public void setCommandLog(CharacterList Character) {
+  public void setCommandLog(Character Character) {
     this.commandLog = Character.charaName + "は" + Character.attackWay + "で攻撃した";
   }
 
@@ -22,7 +22,7 @@ public abstract class CommandBase {
     return this.commandLog;
   }
 
-  public void setRecoveryLog(CharacterList Character) {
+  public void setRecoveryLog(Character Character) {
     this.commandLog = Character.charaName + "は" + Character.RecoveryWay + "でかいふくした";
   }
 

@@ -1,6 +1,6 @@
 package jp.co.systena.tigerscave.rpg.applications.models;
 
-public class CharacterList extends CharacterBase{
+public class Character extends CharacterBase{
 
   @Override
   public String getJob() {
